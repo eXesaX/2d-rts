@@ -62,8 +62,6 @@ void Map::scrollOn(ofPoint delta) {
 void Map::mouseMinimapCallback(int x, int y) {
 	float centerX = -x / minimap.getWidth();
 	float centerY = -(1+(y - *windowHeight) / minimap.getHeight());
-	cout << centerX << " " << centerY << endl;
 
-	cout << centerX << " " << centerY << endl;
 	setCameraCenter(ofPoint(centerX, centerY));
 }
